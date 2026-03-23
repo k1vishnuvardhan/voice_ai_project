@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murf AI Voice Bot</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">Hackathon Demo</p>
+        <h1>Murf AI Voice Bot</h1>
+        <p class="hero-copy">
+          Speak into the mic, get a text response, and hear the bot answer back
+          with Murf AI voice synthesis.
+        </p>
+      </section>
+
+      <section class="panel controls">
+        <div class="status-row">
+          <span id="statusBadge" class="badge">Checking server...</span>
+          <span id="voiceInfo" class="voice-info"></span>
+        </div>
+
+        <label for="textInput">Or type your question</label>
+        <textarea
+          id="textInput"
+          rows="4"
+          placeholder="Ask about the project, team, or Murf integration..."
+        ></textarea>
+
+        <div class="button-row">
+          <button id="listenBtn" class="primary">Start Listening</button>
+          <button id="sendBtn">Send Text</button>
+          <button id="stopAudioBtn">Stop Audio</button>
+        </div>
+      </section>
+
+      <section class="panel transcript-panel">
+        <div class="message-block">
+          <h2>You</h2>
+          <p id="userText">Waiting for input...</p>
+        </div>
+        <div class="message-block">
+          <h2>Bot</h2>
+          <p id="botText">The bot reply will appear here.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
