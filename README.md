@@ -1,6 +1,6 @@
-# Murf AI Voice Bot Starter
+# AI Voice Assistant
 
-This is a hackathon-ready starter project for a browser-based voice bot using OpenRouter for LLM responses and Murf AI for text to speech.
+This is a browser-based voice assistant using OpenRouter for LLM responses and Murf AI for text to speech.
 
 ## What it does
 
