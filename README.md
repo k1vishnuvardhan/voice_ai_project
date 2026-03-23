@@ -27,6 +27,14 @@ This is a hackathon-ready starter project for a browser-based voice bot using Op
 
 4. Open `http://localhost:3000`
 
+## Deploy on Render
+
+1. Push this project to GitHub.
+2. In Render, create a new Blueprint service from your GitHub repo.
+3. Render will detect [render.yaml](C:\Users\VISHNUVARDHAN\OneDrive\Desktop\ai_voice_project\render.yaml).
+4. In Render, add secret values for `MURF_API_KEY` and `OPENROUTER_API_KEY`.
+5. Deploy and open the generated `onrender.com` URL on any device.
+
 ## Recommended keys
 
 - `OPENROUTER_API_KEY`: OpenRouter API key for the chatbot brain

@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || "0.0.0.0";
 const MURF_API_KEY = process.env.MURF_API_KEY;
 const MURF_VOICE_ID = process.env.MURF_VOICE_ID || "en-US-natalie";
 const MURF_API_URL = "https://api.murf.ai/v1/speech/generate";
@@ -163,6 +164,6 @@ app.post("/api/voice", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Voice bot running at http://localhost:${PORT}`);
+app.listen(PORT, HOST, () => {
+  console.log(`Voice bot running on ${HOST}:${PORT}`);
 });
