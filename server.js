@@ -20,26 +20,26 @@ function generateBotReply(message) {
   const normalized = message.toLowerCase();
 
   if (normalized.includes("hello") || normalized.includes("hi")) {
-    return "Hello! I am your Murf powered hackathon voice bot. Ask me about this project, the team, or the demo.";
+    return "Hello! I am your voice assistant. How can I help you today?";
   }
 
-  if (normalized.includes("project")) {
-    return "This project is a browser based voice bot. It listens to the user, generates a reply, and speaks it back using Murf AI voices.";
+  if (normalized.includes("who are you") || normalized.includes("what can you do")) {
+    return "I am a browser based voice assistant that can answer questions, help with ideas, and speak responses aloud using AI voice synthesis.";
   }
 
-  if (normalized.includes("team")) {
-    return "Our team built this prototype to create natural, conversational voice experiences quickly for hackathon demos and customer support use cases.";
+  if (normalized.includes("time")) {
+    return "I cannot check your local clock directly, but I can still help with questions, explanations, and spoken responses.";
   }
 
-  if (normalized.includes("murf")) {
-    return "Murf AI handles the text to speech layer here, so the bot can respond with a realistic synthetic voice.";
+  if (normalized.includes("weather")) {
+    return "I do not have live weather data connected right now, but I can still help with general questions and conversation.";
   }
 
   if (normalized.includes("bye")) {
-    return "Thanks for trying the demo. Good luck with the hackathon presentation!";
+    return "Goodbye. I am here whenever you need me again.";
   }
 
-  return `You said: ${message}. For the hackathon demo, I can explain the project, the team, or how Murf powers the voice response.`;
+  return `You said: ${message}. I can help with general questions, simple brainstorming, explanations, and spoken replies.`;
 }
 
 async function generateOpenRouterReply(message) {
@@ -63,7 +63,7 @@ async function generateOpenRouterReply(message) {
         {
           role: "system",
           content:
-            "You are a friendly hackathon voice bot. Give concise, natural spoken replies. Keep answers under 3 short sentences unless the user asks for more detail."
+            "You are a friendly general-purpose voice assistant. Give concise, natural spoken replies. Keep answers under 3 short sentences unless the user asks for more detail."
         },
         {
           role: "user",
