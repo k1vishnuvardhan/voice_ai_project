@@ -1,5 +1,5 @@
 # AI Voice Assistant
-#click to open the website with complete deployement: https://voice-ai-project-bl1m.onrender.com/
+#click to open the website with complete deployement:<a href="https://voice-ai-project-bl1m.onrender.com/">visit my link</a>
 This is a browser-based voice assistant using OpenRouter for LLM responses and Murf AI for text to speech.
 
 ## What it does
